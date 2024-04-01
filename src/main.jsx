@@ -2,6 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import Home from './Components/Home/Home'
+import Header from './Components/Header/Header.jsx'
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact.jsx'
 
 //https://reactrouter.com/en/main/start/tutorial
 //45-1 What Is SPA, Routing And React Router Setup
@@ -22,7 +26,23 @@ const router = createBrowserRouter([
   {
     path:"/",
     // element: <p>hello world</p>
-    element: <div>hello world from react router</div>
+    // element: <div>hello world from react router</div>
+    element: <Home></Home>,
+    children : [
+      {
+        path:"/about",
+        element::<About></About>
+
+      },
+      {
+        path:"/contact",
+        element::<Contact></Contact>
+      },
+    ]
+  },
+  {
+    path:"/header",
+    element:<Header></Header>
   },
   {
     path:"/about",
