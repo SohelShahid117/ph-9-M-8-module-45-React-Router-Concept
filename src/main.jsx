@@ -12,6 +12,7 @@ import Contact from './Components/Contact/Contact.jsx'
 //45-1 What Is SPA, Routing And React Router Setup
 //45-2 Explain Nested Route Concepts
 //45-3 (Recap) Nested Route And Use Link, Outlet
+//45-4 Load Data On Route Using Loader And UseLoaderData
 
 import {
   createBrowserRouter,
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/users",
+        loader : () => fetch("https://jsonplaceholder.typicode.com/users"),
         element : <Users></Users>
       }
     ],
