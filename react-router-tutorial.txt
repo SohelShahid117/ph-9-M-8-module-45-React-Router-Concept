@@ -1,0 +1,57 @@
+1.https://reactrouter.com/en/main/start/tutorial
+
+2.setup
+npm create vite@latest name-of-your-project -- --template react
+# follow prompts
+cd <your new project directory>
+npm install react-router-dom localforage match-sorter sort-by
+npm run dev
+
+3.adding-a-router
+First thing to do is create a Browser Router and configure our first route. This will enable client side routing for our web app.
+
+The main.jsx file is the entry point. Open it up and we'll put React Router on the page
+
+import ReactDOM from 'react-dom/client'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+
+4.the-root-route
+
+/* existing imports */
+import Root from "./routes/root";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+
+5.handling-not-found-errors
+
+
