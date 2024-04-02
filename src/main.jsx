@@ -11,11 +11,13 @@ import Contact from './Components/Contact/Contact.jsx'
 //https://reactrouter.com/en/main/start/tutorial
 //45-1 What Is SPA, Routing And React Router Setup
 //45-2 Explain Nested Route Concepts
+//45-3 (Recap) Nested Route And Use Link, Outlet
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Users from './Components/Users/Users.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -41,9 +43,13 @@ const router = createBrowserRouter([
         path:"/contact",
         element:<Contact/>,
       },
+      {
+        path:"/users",
+        element : <Users></Users>
+      }
     ],
   },
-  
+
   {
     path:"/header",
     element:<Header></Header>
