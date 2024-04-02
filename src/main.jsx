@@ -7,12 +7,14 @@ import Header from './Components/Header/Header.jsx'
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact.jsx'
 // import Team, { teamLoader } from "./routes/team";
+import UserDetails from './Components/UserDetail/UserDetails.jsx'
 
 //https://reactrouter.com/en/main/start/tutorial
 //45-1 What Is SPA, Routing And React Router Setup
 //45-2 Explain Nested Route Concepts
 //45-3 (Recap) Nested Route And Use Link, Outlet
 //45-4 Load Data On Route Using Loader And UseLoaderData
+//45-5 Dynamic Route With Params And Load Single User Data
 
 import {
   createBrowserRouter,
@@ -48,6 +50,15 @@ const router = createBrowserRouter([
         path:"/users",
         loader : () => fetch("https://jsonplaceholder.typicode.com/users"),
         element : <Users></Users>
+      },
+      {
+        // path:"/user/:1",
+        path:"/user/:userId",
+        // loader : () => fetch("https://jsonplaceholder.typicode.com/users/7"),
+        // loader : ({params}) => console.log(params),
+        // loader : ({params}) => console.log(params.userId),
+        loader : ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        element:<UserDetails></UserDetails>
       }
     ],
   },
