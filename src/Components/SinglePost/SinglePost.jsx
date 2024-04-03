@@ -15,7 +15,10 @@ const SinglePost = ({post}) => {
             <h2>Post of Id : {id}</h2>
             <h3>{title}</h3>
             {/* <Link to = {`/`}>Show Post Details</Link> */}
-            <Link to = {`/post/${id}`}>Show Post Details</Link>
+            {/* <Link to = {`/posts/${id}`}>Show Post Details</Link> */}
+            <Link to = {`/posts/${id}`}>
+                <button>Show Details</button>
+            </Link>
             
         </div>
     );

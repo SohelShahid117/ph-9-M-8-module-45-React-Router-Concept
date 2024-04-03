@@ -3,7 +3,7 @@ import SinglePost from "../SinglePost/SinglePost";
 
 const Posts = () => {
     const posttt = useLoaderData();
-    console.log(posttt);
+    // console.log(posttt);
 
     return (
         <div>
