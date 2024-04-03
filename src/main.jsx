@@ -15,6 +15,9 @@ import UserDetails from './Components/UserDetail/UserDetails.jsx'
 //45-3 (Recap) Nested Route And Use Link, Outlet
 //45-4 Load Data On Route Using Loader And UseLoaderData
 //45-5 Dynamic Route With Params And Load Single User Data
+//45-6 (Recap) Dynamic Route, Params And Load Dynamic Data
+//45-7 Navigate On Click, UseNavigate, Not Found And UseParams
+
 
 import {
   createBrowserRouter,
