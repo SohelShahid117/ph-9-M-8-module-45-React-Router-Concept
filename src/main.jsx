@@ -26,6 +26,7 @@ import {
 import Users from './Components/Users/Users.jsx'
 import Posts from './Components/Posts/Posts';
 import PostDetails from './Components/PostDetails/PostDetails.jsx'
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
     // element: <div>hello world from react router</div>
     element: <Home></Home>,
     // loader: rootLoader,
+    errorElement:<ErrorPage></ErrorPage>,
     children : [
       {
         path:"/about",
