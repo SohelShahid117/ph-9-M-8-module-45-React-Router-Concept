@@ -18,7 +18,12 @@ import UserDetails from './Components/UserDetail/UserDetails.jsx'
 //45-6 (Recap) Dynamic Route, Params And Load Dynamic Data
 //45-7 Navigate On Click, UseNavigate, Not Found And UseParams
 //45-8 Active Route, Loading Spinner, UseLocation, UseNavigation
+//45-9 Module Summary And Practice With Meal Db
 
+
+//https://www.themealdb.com/
+//https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+//www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 
 
 import {
