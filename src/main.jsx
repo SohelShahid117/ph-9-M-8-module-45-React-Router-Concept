@@ -17,6 +17,8 @@ import UserDetails from './Components/UserDetail/UserDetails.jsx'
 //45-5 Dynamic Route With Params And Load Single User Data
 //45-6 (Recap) Dynamic Route, Params And Load Dynamic Data
 //45-7 Navigate On Click, UseNavigate, Not Found And UseParams
+//45-8 Active Route, Loading Spinner, UseLocation, UseNavigation
+
 
 
 import {
